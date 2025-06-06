@@ -7,20 +7,30 @@ import 'swiper/css/pagination';
 
 const images = [
   {
-    url: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    title: 'Annual Meeting 2024'
+    image: "/images/happyLohri.jpg",
+    title: 'Happy Lohri'
   },
   {
-    url: 'https://images.unsplash.com/photo-1559223607-a43c990c692c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y29tbXVuaXR5JTIwbWVldGluZ3xlbnwwfHwwfHx8MA%3D%3D',
-    title: 'Community Program'
+    image: '/images/lohriCelebration.jpg',
+    title: 'Lohri Celebration'
   },
   {
-    url: 'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    title: 'Leadership Workshop'
+    image: '/images/jagrata.jpg',
+    title: 'Jagrata Program'
   },
   {
-    url: 'https://images.unsplash.com/photo-1528605248644-14dd04022da1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80',
-    title: 'Team Building Event'
+    image: '/images/jagrataNight.jpg',
+    title: 'Jagrata Night'
+  },
+  {
+    image: '/images/gurbaniPath.jpg',
+    title: 'Gurbani Path'
+  },
+  {
+    image: '/images/path.jpg',
+  },
+  {
+    image: '/images/langar.jpg',
   }
 ];
 
@@ -42,7 +52,7 @@ const ImageSlider = () => {
             <SwiperSlide key={index}>
               <div className="relative">
                 <img
-                  src={image.url}
+                  src={image.image}
                   alt={image.title}
                   className="w-full h-[600px] object-cover"
                 />
